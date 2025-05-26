@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Radiadores - Sistema de Estoque</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nome da Empresa</h1>
+            <p>Sistema de Estoque de Radiadores</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="busca-section">
+            <h2>Escolha a marca</h2>
+            <div class="form-group">
+                <label for="marca-select">Marca:</label>
+                <select id="marca-select" class="form-control">
+                    <option value="">Selecione a marca</option>
+                    <!-- As marcas serão carregadas dinamicamente via JavaScript -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="modelo-select">Modelo:</label>
+                <select id="modelo-select" class="form-control">
+                    <option value="">Selecione a marca primeiro</option>
+                    <!-- Os modelos serão carregados dinamicamente via JavaScript -->
+                </select>
+            </div>
+        </section>
+
+        <section class="radiadores-section">
+            <h2>Radiadores Disponíveis</h2>
+            <div class="radiadores-grid" id="radiadores-container">
+                <!-- Os radiadores serão carregados dinamicamente via JavaScript -->
+            </div>
+        </section>
+
+        <div class="actions">
+            <a href="../index.html" class="btn btn-secondary">Voltar para a página inicial</a>
+            <a href="../pages/cadastro.html" class="btn btn-primary">Cadastrar novo radiador</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sistema de Estoque de Radiadores. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

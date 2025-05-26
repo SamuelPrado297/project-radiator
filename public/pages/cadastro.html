@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Radiadores - Sistema de Estoque</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nome da Empresa</h1>
+            <p>Sistema de Estoque de Radiadores</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cadastro-section">
+            <h2 class="form-title">CADASTRAR RADIADOR</h2>
+            
+            <form id="cadastro-form" class="cadastro-form">
+                <div class="form-group">
+                    <label for="numero_peca">Número da peça:</label>
+                    <input type="text" id="numero_peca" name="numero_peca" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="marca">Marca:</label>
+                    <select id="marca" name="marca" class="form-control" required>
+                        <option value="">Selecione a marca</option>
+                        <!-- As marcas serão carregadas dinamicamente via JavaScript -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" name="Modelo" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" class="form-control" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" class="form-control" step="0.01" min="0" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantidade_estoque">Quantidade em estoque:</label>
+                    <input type="number" id="quantidade_estoque" name="quantidade_estoque" class="form-control" min="0" value="0" required>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+        
+        <div class="actions">
+            <a href="../index.html" class="btn btn-secondary">Voltar para a página inicial</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sistema de Estoque de Radiadores. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
