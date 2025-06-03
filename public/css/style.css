@@ -20,16 +20,34 @@ body {
 
 /* Header */
 header {
-    background-color: #8B0000; /* Vermelho escuro */
+    background-color:rgb(0, 0, 0); /* Vermelho escuro */
     color: white;
     padding: 20px 0;
-    text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+header .container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre logo e texto */
+} 
+
+header h3 {
+  margin: 0;
+  font-size: 24px;
 }
+
+select {
+    color: gray;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.radiadores-section h2, p {
+    margin-top: 10px;
+} 
 
 /* Seção de marcas */
 .marcas-section {
@@ -50,7 +68,6 @@ header h1 {
 }
 
 .marca-item {
-    background-color: white;
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -69,6 +86,7 @@ header h1 {
 
 /* Seção de busca */
 .busca-section {
+    margin-top: 40px;
     padding: 40px 0;
     text-align: center;
     background-color: #f0f0f0;
@@ -104,6 +122,8 @@ header h1 {
 .btn-primary {
     background-color: #8B0000; /* Vermelho escuro */
     color: white;
+    border: none;
+    margin-top: 5px;
 }
 
 .btn-primary:hover {
@@ -113,6 +133,8 @@ header h1 {
 .btn-secondary {
     background-color: #333;
     color: white;
+    border: none;
+    margin-top: 5px;
 }
 
 .btn-secondary:hover {
@@ -132,6 +154,7 @@ header h1 {
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
 }
 
 .radiador-card h3 {
@@ -179,6 +202,7 @@ header h1 {
 
 .form-title {
     text-align: center;
+    margin-top: 30px;
     margin-bottom: 30px;
     color: #8B0000;
 }
@@ -195,6 +219,7 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+    margin-top: 15px;
 }
 
 /* Responsividade */
