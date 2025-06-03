@@ -53,7 +53,7 @@
                     const btnComprar = document.createElement('a');
                     btnComprar.href = '#';
                     btnComprar.className = 'btn btn-primary';
-                    btnComprar.textContent = 'Comprar';
+                    btnComprar.textContent = 'Entrar em contato';
                     btnComprar.dataset.id = radiador.id;
                     
                     btnComprar.addEventListener('click', (e) => {

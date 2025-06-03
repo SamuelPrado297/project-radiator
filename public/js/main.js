@@ -244,7 +244,7 @@ const paginaBusca = {
                 href: `#`, 
                 class: 'btn btn-primary',
                 'data-id': radiador.id
-            }, 'Comprar');
+            }, 'Entre em contato');
             
             btnComprar.addEventListener('click', (e) => {
                 e.preventDefault();
